@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Backbone First Look</title>
+	<script src="js/libs/jquery.js"></script>
+	<script src="js/libs/underscore.js"></script>
+	<script src="js/libs/backbone.js"></script>
+	<script src="js/libs/backbone.localstorage.js"></script>
+	<script src="js/TaskView.js"></script>
+	<script src="js/TaskModel.js"></script>
+	<script src="js/TaskCollection.js"></script>
+	<link rel='stylesheet' type='text/css' href='css/jquery-ui.css'></link>
+	<script type='text/javascript' src='js/libs/jquery-ui-1.10.4.custom.min.js'></script>
+	
+	<script type='text/javascript'>
+	$(function(){
+	var task=new TaskView();
+	console.log(task);
+	
+	});
+	</script>
+	<style type='text/css'>
+	#header
+	{border: 1px solid #ccc;
+height: 85px;
+}
+#header li
+{list-style: none;
+border: 1px solid;
+width: 20%;
+margin-left: -40px;
+margin-top: -15px;
+height: 80px;
+text-align: center;
+background-color: #ccc;
+color: #564;
+font-weight: bold;
+font-size: 20px;
+float: left;
+margin-right: 40px;
+}
+
+#header li span
+{
+display: block;
+margin-top: 30px;
+
+}
+
+.container
+{border: 1px solid #666;
+height: 500px;}
+
+
+	</style>
+	<script type="text/template" id="Commentbox">
+ <div>
+<textarea row='50' cols='10'></textarea>
+</div>
+<input type='submit' id='sb_btn' value='submit'/>
+</div>
+</script>
+<script type="text/template" id="sliders">
+<div class="demo">
+<input type='text' value='' id='lumpsumEnter'/>
+<input type='button' value='update' id='update'/>
+<div id='amountfetch'><span></span></div>
+
+    <div class="slider" id='slide-1'></div>
+    <p><span>AmountInvested:0</span></p>
+    <div class="slider" id='slide-2'></div>
+    <p>Value: 0</p>
+    <div class="slider" id='slide-3'></div>
+    <p>Value: 0</p>
+    <div class="slider" id='slide-4'></div>
+    <p>Value: 0</p>
+	
+    
+</div>
+
+</script>
+
+
+
+</head>
+<body>
+<div id='header'><ul>
+<li><span>CommentBox</span></li>
+<li><span>Sliders</span></li>
+<ul>
+</div>
+<div id='container'></div>
+	
+</body>
+</html>
